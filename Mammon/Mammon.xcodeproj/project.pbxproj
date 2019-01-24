@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42C1ACDAFE95AB61199349A1 /* Pods_MammonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6E3FF8589004C1D73F9DEF /* Pods_MammonTests.framework */; };
+		5420014F21F99F370033E7DA /* appconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5420014E21F99F370033E7DA /* appconfig.plist */; };
+		542B1ED821D8424600EC5A86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B1ED721D8424600EC5A86 /* AppDelegate.swift */; };
+		542B1EDC21D8424600EC5A86 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B1EDB21D8424600EC5A86 /* DashboardViewController.swift */; };
+		542B1EE121D8424600EC5A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542B1EDF21D8424600EC5A86 /* Main.storyboard */; };
+		542B1EE321D8424700EC5A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542B1EE221D8424700EC5A86 /* Assets.xcassets */; };
+		542B1EE621D8424700EC5A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542B1EE421D8424700EC5A86 /* LaunchScreen.storyboard */; };
+		542B1EF121D8424800EC5A86 /* MammonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B1EF021D8424800EC5A86 /* MammonTests.swift */; };
+		542B1EFC21D8424800EC5A86 /* MammonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B1EFB21D8424800EC5A86 /* MammonUITests.swift */; };
+		542B1F0A21D855A900EC5A86 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 542B1F0921D855A900EC5A86 /* awsconfiguration.json */; };
+		5469A7B221F54EFC00DDCC90 /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469A7B121F54EFC00DDCC90 /* ExpenseCell.swift */; };
+		54B3C48C21F3013B004ED541 /* SqliteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3C48B21F3013B004ED541 /* SqliteManager.swift */; };
+		54B3C48E21F301FB004ED541 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3C48D21F301FB004ED541 /* Utils.swift */; };
+		54B3C49021F39898004ED541 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3C48F21F39898004ED541 /* Expense.swift */; };
+		54B3C49621F39AC8004ED541 /* ExpenseCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3C49521F39AC8004ED541 /* ExpenseCategory.swift */; };
+		54B3C49821F3FD09004ED541 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3C49721F3FD09004ED541 /* MainViewController.swift */; };
+		54B3C49A21F40022004ED541 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3C49921F40022004ED541 /* NavigationViewController.swift */; };
+		54D15B4F21DED62A004B33AF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D15B4E21DED62A004B33AF /* CoreTelephony.framework */; };
+		54E4136521E9BBA80098BC89 /* AddNewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4136421E9BBA80098BC89 /* AddNewExpenseViewController.swift */; };
+		54E4136721E9BF1C0098BC89 /* S3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4136621E9BF1C0098BC89 /* S3Manager.swift */; };
+		54E4136921E9C34E0098BC89 /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4136821E9C34E0098BC89 /* DirectoryManager.swift */; };
+		8012E3DCA08F38619F4294B3 /* Pods_MammonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A68DEFFF78A3CC5B682538 /* Pods_MammonUITests.framework */; };
+		A91F2C3268FC98552AAE81DF /* Pods_Mammon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1FAF730E1A1D9E9993CE88 /* Pods_Mammon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		542B1EED21D8424800EC5A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 542B1ECC21D8424600EC5A86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 542B1ED321D8424600EC5A86;
+			remoteInfo = Mammon;
+		};
+		542B1EF821D8424800EC5A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 542B1ECC21D8424600EC5A86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 542B1ED321D8424600EC5A86;
+			remoteInfo = Mammon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38643F4B8DBDB2A37B4B68AA /* Pods-Mammon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mammon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mammon/Pods-Mammon.release.xcconfig"; sourceTree = "<group>"; };
+		3D442EE4E67C3973039AF657 /* Pods-MammonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MammonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MammonTests/Pods-MammonTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D1FAF730E1A1D9E9993CE88 /* Pods_Mammon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mammon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5420014E21F99F370033E7DA /* appconfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = appconfig.plist; sourceTree = "<group>"; };
+		542B1ED421D8424600EC5A86 /* Mammon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mammon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		542B1ED721D8424600EC5A86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		542B1EDB21D8424600EC5A86 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		542B1EE021D8424600EC5A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		542B1EE221D8424700EC5A86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		542B1EE521D8424700EC5A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		542B1EE721D8424700EC5A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542B1EEC21D8424800EC5A86 /* MammonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MammonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		542B1EF021D8424800EC5A86 /* MammonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MammonTests.swift; sourceTree = "<group>"; };
+		542B1EF221D8424800EC5A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542B1EF721D8424800EC5A86 /* MammonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MammonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		542B1EFB21D8424800EC5A86 /* MammonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MammonUITests.swift; sourceTree = "<group>"; };
+		542B1EFD21D8424800EC5A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542B1F0921D855A900EC5A86 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		5469A7B121F54EFC00DDCC90 /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
+		54B3C48B21F3013B004ED541 /* SqliteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqliteManager.swift; sourceTree = "<group>"; };
+		54B3C48D21F301FB004ED541 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		54B3C48F21F39898004ED541 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		54B3C49521F39AC8004ED541 /* ExpenseCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategory.swift; sourceTree = "<group>"; };
+		54B3C49721F3FD09004ED541 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		54B3C49921F40022004ED541 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		54D15B4E21DED62A004B33AF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		54E4136421E9BBA80098BC89 /* AddNewExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewExpenseViewController.swift; sourceTree = "<group>"; };
+		54E4136621E9BF1C0098BC89 /* S3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3Manager.swift; sourceTree = "<group>"; };
+		54E4136821E9C34E0098BC89 /* DirectoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryManager.swift; sourceTree = "<group>"; };
+		6C2DD8C5E14EBA4ABB2DE9AA /* Pods-MammonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MammonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MammonUITests/Pods-MammonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A958E73FB86B24BBFFA9466 /* Pods-MammonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MammonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MammonUITests/Pods-MammonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7B356BCBE6DD5DF67A8A2E1 /* Pods-Mammon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mammon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mammon/Pods-Mammon.debug.xcconfig"; sourceTree = "<group>"; };
+		B44B40AAD43C62A39BF024BF /* Pods-MammonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MammonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MammonTests/Pods-MammonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4A68DEFFF78A3CC5B682538 /* Pods_MammonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MammonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6E3FF8589004C1D73F9DEF /* Pods_MammonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MammonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		542B1ED121D8424600EC5A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D15B4F21DED62A004B33AF /* CoreTelephony.framework in Frameworks */,
+				A91F2C3268FC98552AAE81DF /* Pods_Mammon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542B1EE921D8424800EC5A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C1ACDAFE95AB61199349A1 /* Pods_MammonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542B1EF421D8424800EC5A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8012E3DCA08F38619F4294B3 /* Pods_MammonUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5420015121F9A6630033E7DA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				542B1EDB21D8424600EC5A86 /* DashboardViewController.swift */,
+				54E4136421E9BBA80098BC89 /* AddNewExpenseViewController.swift */,
+				54B3C49721F3FD09004ED541 /* MainViewController.swift */,
+				54B3C49921F40022004ED541 /* NavigationViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		542B1ECB21D8424600EC5A86 = {
+			isa = PBXGroup;
+			children = (
+				542B1ED621D8424600EC5A86 /* Mammon */,
+				542B1EEF21D8424800EC5A86 /* MammonTests */,
+				542B1EFA21D8424800EC5A86 /* MammonUITests */,
+				542B1ED521D8424600EC5A86 /* Products */,
+				CF99DD14B69C0356776C77B1 /* Pods */,
+				6BA40C5E7DAFFF6790650460 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		542B1ED521D8424600EC5A86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				542B1ED421D8424600EC5A86 /* Mammon.app */,
+				542B1EEC21D8424800EC5A86 /* MammonTests.xctest */,
+				542B1EF721D8424800EC5A86 /* MammonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		542B1ED621D8424600EC5A86 /* Mammon */ = {
+			isa = PBXGroup;
+			children = (
+				5420015121F9A6630033E7DA /* View Controllers */,
+				542B1F0921D855A900EC5A86 /* awsconfiguration.json */,
+				542B1ED721D8424600EC5A86 /* AppDelegate.swift */,
+				542B1EDF21D8424600EC5A86 /* Main.storyboard */,
+				542B1EE221D8424700EC5A86 /* Assets.xcassets */,
+				542B1EE421D8424700EC5A86 /* LaunchScreen.storyboard */,
+				542B1EE721D8424700EC5A86 /* Info.plist */,
+				54E4136621E9BF1C0098BC89 /* S3Manager.swift */,
+				54E4136821E9C34E0098BC89 /* DirectoryManager.swift */,
+				54B3C48B21F3013B004ED541 /* SqliteManager.swift */,
+				54B3C48D21F301FB004ED541 /* Utils.swift */,
+				54B3C48F21F39898004ED541 /* Expense.swift */,
+				54B3C49521F39AC8004ED541 /* ExpenseCategory.swift */,
+				5469A7B121F54EFC00DDCC90 /* ExpenseCell.swift */,
+				5420014E21F99F370033E7DA /* appconfig.plist */,
+			);
+			path = Mammon;
+			sourceTree = "<group>";
+		};
+		542B1EEF21D8424800EC5A86 /* MammonTests */ = {
+			isa = PBXGroup;
+			children = (
+				542B1EF021D8424800EC5A86 /* MammonTests.swift */,
+				542B1EF221D8424800EC5A86 /* Info.plist */,
+			);
+			path = MammonTests;
+			sourceTree = "<group>";
+		};
+		542B1EFA21D8424800EC5A86 /* MammonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				542B1EFB21D8424800EC5A86 /* MammonUITests.swift */,
+				542B1EFD21D8424800EC5A86 /* Info.plist */,
+			);
+			path = MammonUITests;
+			sourceTree = "<group>";
+		};
+		6BA40C5E7DAFFF6790650460 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54D15B4E21DED62A004B33AF /* CoreTelephony.framework */,
+				4D1FAF730E1A1D9E9993CE88 /* Pods_Mammon.framework */,
+				EC6E3FF8589004C1D73F9DEF /* Pods_MammonTests.framework */,
+				E4A68DEFFF78A3CC5B682538 /* Pods_MammonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF99DD14B69C0356776C77B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7B356BCBE6DD5DF67A8A2E1 /* Pods-Mammon.debug.xcconfig */,
+				38643F4B8DBDB2A37B4B68AA /* Pods-Mammon.release.xcconfig */,
+				B44B40AAD43C62A39BF024BF /* Pods-MammonTests.debug.xcconfig */,
+				3D442EE4E67C3973039AF657 /* Pods-MammonTests.release.xcconfig */,
+				8A958E73FB86B24BBFFA9466 /* Pods-MammonUITests.debug.xcconfig */,
+				6C2DD8C5E14EBA4ABB2DE9AA /* Pods-MammonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		542B1ED321D8424600EC5A86 /* Mammon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542B1F0021D8424800EC5A86 /* Build configuration list for PBXNativeTarget "Mammon" */;
+			buildPhases = (
+				253240CA65BF7B25F49A84E4 /* [CP] Check Pods Manifest.lock */,
+				542B1ED021D8424600EC5A86 /* Sources */,
+				542B1ED121D8424600EC5A86 /* Frameworks */,
+				542B1ED221D8424600EC5A86 /* Resources */,
+				56CC856C214354D066AF6F5D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mammon;
+			productName = Mammon;
+			productReference = 542B1ED421D8424600EC5A86 /* Mammon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		542B1EEB21D8424800EC5A86 /* MammonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542B1F0321D8424800EC5A86 /* Build configuration list for PBXNativeTarget "MammonTests" */;
+			buildPhases = (
+				9A85E5E0433A78493A8CF99F /* [CP] Check Pods Manifest.lock */,
+				542B1EE821D8424800EC5A86 /* Sources */,
+				542B1EE921D8424800EC5A86 /* Frameworks */,
+				542B1EEA21D8424800EC5A86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				542B1EEE21D8424800EC5A86 /* PBXTargetDependency */,
+			);
+			name = MammonTests;
+			productName = MammonTests;
+			productReference = 542B1EEC21D8424800EC5A86 /* MammonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		542B1EF621D8424800EC5A86 /* MammonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 542B1F0621D8424800EC5A86 /* Build configuration list for PBXNativeTarget "MammonUITests" */;
+			buildPhases = (
+				EB70BA1DCC018CCC8B8697A0 /* [CP] Check Pods Manifest.lock */,
+				542B1EF321D8424800EC5A86 /* Sources */,
+				542B1EF421D8424800EC5A86 /* Frameworks */,
+				542B1EF521D8424800EC5A86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				542B1EF921D8424800EC5A86 /* PBXTargetDependency */,
+			);
+			name = MammonUITests;
+			productName = MammonUITests;
+			productReference = 542B1EF721D8424800EC5A86 /* MammonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		542B1ECC21D8424600EC5A86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Simon Shoban";
+				TargetAttributes = {
+					542B1ED321D8424600EC5A86 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					542B1EEB21D8424800EC5A86 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 542B1ED321D8424600EC5A86;
+					};
+					542B1EF621D8424800EC5A86 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 542B1ED321D8424600EC5A86;
+					};
+				};
+			};
+			buildConfigurationList = 542B1ECF21D8424600EC5A86 /* Build configuration list for PBXProject "Mammon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 542B1ECB21D8424600EC5A86;
+			productRefGroup = 542B1ED521D8424600EC5A86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				542B1ED321D8424600EC5A86 /* Mammon */,
+				542B1EEB21D8424800EC5A86 /* MammonTests */,
+				542B1EF621D8424800EC5A86 /* MammonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		542B1ED221D8424600EC5A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5420014F21F99F370033E7DA /* appconfig.plist in Resources */,
+				542B1F0A21D855A900EC5A86 /* awsconfiguration.json in Resources */,
+				542B1EE621D8424700EC5A86 /* LaunchScreen.storyboard in Resources */,
+				542B1EE321D8424700EC5A86 /* Assets.xcassets in Resources */,
+				542B1EE121D8424600EC5A86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542B1EEA21D8424800EC5A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542B1EF521D8424800EC5A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		253240CA65BF7B25F49A84E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mammon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56CC856C214354D066AF6F5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mammon/Pods-Mammon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthUI/AWSAuthUI.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSUserPoolsSignIn/AWSUserPoolsSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts-Swift/BoltsSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSUserPoolsSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BoltsSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mammon/Pods-Mammon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A85E5E0433A78493A8CF99F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MammonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB70BA1DCC018CCC8B8697A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MammonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		542B1ED021D8424600EC5A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B3C49021F39898004ED541 /* Expense.swift in Sources */,
+				54B3C49A21F40022004ED541 /* NavigationViewController.swift in Sources */,
+				542B1EDC21D8424600EC5A86 /* DashboardViewController.swift in Sources */,
+				54B3C49621F39AC8004ED541 /* ExpenseCategory.swift in Sources */,
+				5469A7B221F54EFC00DDCC90 /* ExpenseCell.swift in Sources */,
+				542B1ED821D8424600EC5A86 /* AppDelegate.swift in Sources */,
+				54E4136521E9BBA80098BC89 /* AddNewExpenseViewController.swift in Sources */,
+				54B3C48E21F301FB004ED541 /* Utils.swift in Sources */,
+				54B3C48C21F3013B004ED541 /* SqliteManager.swift in Sources */,
+				54E4136921E9C34E0098BC89 /* DirectoryManager.swift in Sources */,
+				54E4136721E9BF1C0098BC89 /* S3Manager.swift in Sources */,
+				54B3C49821F3FD09004ED541 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542B1EE821D8424800EC5A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542B1EF121D8424800EC5A86 /* MammonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		542B1EF321D8424800EC5A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542B1EFC21D8424800EC5A86 /* MammonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		542B1EEE21D8424800EC5A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 542B1ED321D8424600EC5A86 /* Mammon */;
+			targetProxy = 542B1EED21D8424800EC5A86 /* PBXContainerItemProxy */;
+		};
+		542B1EF921D8424800EC5A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 542B1ED321D8424600EC5A86 /* Mammon */;
+			targetProxy = 542B1EF821D8424800EC5A86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		542B1EDF21D8424600EC5A86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542B1EE021D8424600EC5A86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		542B1EE421D8424700EC5A86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				542B1EE521D8424700EC5A86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		542B1EFE21D8424800EC5A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		542B1EFF21D8424800EC5A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		542B1F0121D8424800EC5A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B356BCBE6DD5DF67A8A2E1 /* Pods-Mammon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRFN6TLJV2;
+				INFOPLIST_FILE = Mammon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.shoban.Mammon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		542B1F0221D8424800EC5A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38643F4B8DBDB2A37B4B68AA /* Pods-Mammon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRFN6TLJV2;
+				INFOPLIST_FILE = Mammon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.shoban.Mammon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		542B1F0421D8424800EC5A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B44B40AAD43C62A39BF024BF /* Pods-MammonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRFN6TLJV2;
+				INFOPLIST_FILE = MammonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.shoban.MammonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mammon.app/Mammon";
+			};
+			name = Debug;
+		};
+		542B1F0521D8424800EC5A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D442EE4E67C3973039AF657 /* Pods-MammonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRFN6TLJV2;
+				INFOPLIST_FILE = MammonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.shoban.MammonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mammon.app/Mammon";
+			};
+			name = Release;
+		};
+		542B1F0721D8424800EC5A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A958E73FB86B24BBFFA9466 /* Pods-MammonUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRFN6TLJV2;
+				INFOPLIST_FILE = MammonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.shoban.MammonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mammon;
+			};
+			name = Debug;
+		};
+		542B1F0821D8424800EC5A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2DD8C5E14EBA4ABB2DE9AA /* Pods-MammonUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DRFN6TLJV2;
+				INFOPLIST_FILE = MammonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.shoban.MammonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Mammon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		542B1ECF21D8424600EC5A86 /* Build configuration list for PBXProject "Mammon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542B1EFE21D8424800EC5A86 /* Debug */,
+				542B1EFF21D8424800EC5A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542B1F0021D8424800EC5A86 /* Build configuration list for PBXNativeTarget "Mammon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542B1F0121D8424800EC5A86 /* Debug */,
+				542B1F0221D8424800EC5A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542B1F0321D8424800EC5A86 /* Build configuration list for PBXNativeTarget "MammonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542B1F0421D8424800EC5A86 /* Debug */,
+				542B1F0521D8424800EC5A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		542B1F0621D8424800EC5A86 /* Build configuration list for PBXNativeTarget "MammonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542B1F0721D8424800EC5A86 /* Debug */,
+				542B1F0821D8424800EC5A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 542B1ECC21D8424600EC5A86 /* Project object */;
+}

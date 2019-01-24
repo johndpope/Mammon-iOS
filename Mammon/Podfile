@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Mammon' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Mammon
+
+  target 'MammonTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MammonUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+platform :ios, '9.0'
+  target :'Mammon' do
+      use_frameworks!
+      pod 'AWSMobileClient', '~> 2.8.2'
+      pod 'AWSUserPoolsSignIn', '~> 2.8.2'
+      pod 'AWSAuthUI', '~> 2.8.2'
+      pod 'AWSS3', '~> 2.8.2'
+      pod 'Bolts-Swift'
+      # other pods
+end
